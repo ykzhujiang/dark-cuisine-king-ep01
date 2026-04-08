@@ -21,11 +21,11 @@
     },
     "step1.5": {
       "status": "done",
-      "started_at": "2026-04-08T14:29:11.933737+00:00",
-      "completed_at": "2026-04-08T14:29:13.348288+00:00",
+      "started_at": "2026-04-08T14:31:05.265247+00:00",
+      "completed_at": "2026-04-08T14:31:05.393882+00:00",
       "output": "production/storyboard/ep01_storyboard_verdict.json",
-      "character_verdict": "SKIP",
-      "storyboard_verdict": "SKIP"
+      "character_verdict": "PASS",
+      "storyboard_verdict": "PASS"
     },
     "step3": {
       "status": "not_started"
