@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>暗黑料理王 — EP01 分镜剧本</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0d0d0d;
+  color: #f0e6d3;
+  font-family: "PingFang SC", "Noto Sans SC", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(180deg, #2a1a0a 0%, #0d0d0d 100%);
+}
+.header h1 {
+  font-size: 32px;
+  color: #ffb347;
+  text-shadow: 0 0 20px rgba(255,179,71,0.5);
+  margin-bottom: 8px;
+}
+.header .subtitle { font-size: 16px; color: #888; }
+.header .tags { margin-top: 12px; }
+.header .tags span {
+  display: inline-block;
+  background: rgba(255,179,71,0.15);
+  color: #ffb347;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin: 4px;
+}
+.scene-img {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+.segment {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.segment-title {
+  font-size: 22px;
+  color: #ffb347;
+  border-left: 4px solid #ffb347;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+.physical-state {
+  background: rgba(255,179,71,0.08);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: #bbb;
+}
+.physical-state h4 { color: #ffb347; margin-bottom: 8px; font-size: 14px; text-transform: uppercase; }
+.part {
+  margin-bottom: 28px;
+  padding: 16px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border-left: 3px solid #555;
+  animation: fadeIn 0.5s ease-out;
+}
+.part-label {
+  display: inline-block;
+  background: #ffb347;
+  color: #0d0d0d;
+  font-weight: bold;
+  font-size: 13px;
+  padding: 2px 10px;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+.part-camera {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 6px;
+  font-style: italic;
+}
+.part-action { margin-bottom: 8px; }
+.dialogue {
+  background: rgba(255,179,71,0.1);
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 8px;
+  font-size: 17px;
+}
+.dialogue .speaker {
+  color: #ffb347;
+  font-weight: bold;
+}
+.characters {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.characters h3 {
+  color: #ffb347;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+.char-card {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.03);
+  padding: 16px;
+  border-radius: 10px;
+}
+.char-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+.char-card .info h4 { color: #ffb347; margin-bottom: 4px; }
+.char-card .info p { font-size: 15px; color: #bbb; }
+.hook {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, rgba(255,179,71,0.1), rgba(255,100,50,0.08));
+  border-radius: 10px;
+  border: 1px solid rgba(255,179,71,0.3);
+  text-align: center;
+  font-size: 17px;
+  color: #ffb347;
+}
+.hook h4 { margin-bottom: 10px; font-size: 14px; text-transform: uppercase; letter-spacing: 2px; }
+.camera-plan {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 16px;
+  font-size: 14px;
+  color: #888;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 13px;
+  color: #555;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔪 暗黑料理王</h1>
+  <div class="subtitle">第一集 · S-Format v7.5 分镜剧本 · 15秒 · 9:16竖屏</div>
+  <div class="tags">
+    <span>美食逆袭</span>
+    <span>喜剧</span>
+    <span>1 Segment</span>
+    <span>6 Parts</span>
+  </div>
+</div>
+
+<img class="scene-img" src="../assets/美食街.png" alt="美食街场景" loading="lazy">
+
+<div class="characters">
+  <h3>🎭 角色</h3>
+  <div class="char-card">
+    <img src="../assets/老李.png" alt="老李" loading="lazy">
+    <div class="info">
+      <h4>老李</h4>
+      <p>40岁路边摊老板，邋遢围裙，刀工惊人。圆脸浓眉，眼神锐利，双手粗糙但指节灵活。</p>
+    </div>
+  </div>
+  <div class="char-card">
+    <img src="../assets/陈主厨.png" alt="陈主厨" loading="lazy">
+    <div class="info">
+      <h4>陈主厨</h4>
+      <p>35岁米其林主厨，洁白厨师服高帽，傲慢冷漠。瘦削高挑，鹰钩鼻薄唇。</p>
+    </div>
+  </div>
+  <div class="char-card">
+    <img src="../assets/围观大妈.png" alt="围观大妈" loading="lazy">
+    <div class="info">
+      <h4>围观大妈</h4>
+      <p>55岁菜市场常客，花棉袄菜篮子，圆脸短卷发，笑起来眼睛眯成线。</p>
+    </div>
+  </div>
+</div>
+
+<div class="segment">
+  <div class="segment-title">Segment 01 · 美食街·白天·路边摊前 · 15s</div>
+
+  <div class="physical-state">
+    <h4>⚡ Physical State Anchoring</h4>
+    <p><strong>老李</strong>：站在路边摊案板后，左手撑案板边缘，右手自然垂在围裙旁</p>
+    <p><strong>陈主厨</strong>：摊位前两米处，双手抱胸，下巴微扬</p>
+    <p><strong>围观大妈</strong>：人群左侧，左手提菜篮，右手叉腰</p>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 1 · 2.5s</span>
+    <div class="part-camera">中景侧拍 · 从围观群众肩后方拍向摊位</div>
+    <div class="part-action">繁忙美食街，老李摊前围了一圈人。陈主厨穿洁白厨师服从人群中走出，用手指指着老李油腻的案板，嘴角挂着嘲讽的笑。</div>
+    <div class="dialogue"><span class="speaker">陈主厨：</span>「你这种地摊货，也配叫厨师？」</div>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 2 · 2.5s</span>
+    <div class="part-camera">近景平拍 · 侧面角度捕捉老李面部</div>
+    <div class="part-action">老李低头看了看自己油腻的围裙，抬起右手袖子擦了一下鼻子，围观群众倒吸一口凉气以为要动手。老李嘴角却缓缓上扬。</div>
+    <div class="dialogue"><span class="speaker">老李：</span>「配不配的……得看手艺。」</div>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 3 · 2.5s</span>
+    <div class="part-camera">特写微仰拍 · 聚焦老李双手和刀</div>
+    <div class="part-action">老李右手伸进围裙内侧口袋，掏出一把裹着旧灰布的菜刀，缓缓展开。刀身虽旧但刃口锃亮反射阳光。</div>
+    <div class="dialogue"><span class="speaker">围观大妈：</span>「哎呦，掏刀了掏刀了！」</div>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 4 · 2.5s</span>
+    <div class="part-camera">大特写俯拍45° · 聚焦刀刃与萝卜接触面</div>
+    <div class="part-action">老李左手按住白萝卜，右手菜刀极快速度连续落下，萝卜被切成纸片般薄透的圆片飞起旋转。一片悬在半空，阳光透出半透明琥珀光泽。</div>
+    <div class="dialogue"><span class="speaker">老李：</span>「看好了——盲切，薄如蝉翼。」</div>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 5 · 2.5s</span>
+    <div class="part-camera">中近景平拍 · 从老李斜后方拍向陈主厨</div>
+    <div class="part-action">案板上整齐堆叠着完美透明薄片。围观群众爆发掌声和惊呼。陈主厨瞪大双眼嘴微张，双手从抱胸变为垂在身侧攥紧拳头，脸色铁青。</div>
+    <div class="dialogue"><span class="speaker">围观人群：</span>「牛啊！！这刀工绝了！！」</div>
+  </div>
+
+  <div class="part">
+    <span class="part-label">Part 6 · 2.5s</span>
+    <div class="part-camera">近景平拍 · 侧面同时框住老李和大妈</div>
+    <div class="part-action">老李把菜刀往案板一插，拍拍围裙上的灰，云淡风轻转身收拾摊位。大妈挤到案板前捏起一片透明萝卜举到眼前端详。</div>
+    <div class="dialogue"><span class="speaker">围观大妈：</span>「小伙子！这萝卜片多少钱一斤啊？」</div>
+  </div>
+
+  <div class="camera-plan">
+    🎬 运镜：中景侧拍 → 近景面部 → 特写双手 → 大特写刀工 → 中近景反打 → 近景双人
+  </div>
+</div>
+
+<div class="hook">
+  <h4>🔮 悬念 / 下集预告</h4>
+  <p>老李的刀从何而来？这把旧菜刀背后藏着什么故事？<br>米其林主厨会就此善罢甘休吗？</p>
+</div>
+
+<footer>
+  EXP-1083 · Trinity V3 · CYCLE-operator-813 · 2026-04-08
+</footer>
+
+</body>
+</html>
